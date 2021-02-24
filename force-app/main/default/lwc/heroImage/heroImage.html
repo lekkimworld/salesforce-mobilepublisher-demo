@@ -1,0 +1,9 @@
+<template>
+    <div class="hero-image" style={backgroundImage}>
+        <div class="hero-text">{headline}</div>
+        <slot></slot>
+        <template if:false={hideHome}>
+            <span class="menu" onclick={home}>&lt;</span>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <c-hero-image headline={headline} hide-home>
+        <span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick={closeNav}
+                    >&times;</a
+                >
+                <template for:each={menuItems} for:item="menuItem">
+                    <a
+                        data-label={menuItem.label}
+                        href="javascript:void(0)"
+                        key={menuItem.id}
+                        onclick={handleMenuClick}
+                        >{menuItem.label}</a
+                    >
+                </template>
+            </div>
+            <span class="menu" onclick={openNav}>&#9776;</span>
+        </span>
+    </c-hero-image>
+</template>

@@ -1,0 +1,38 @@
+.menu {
+  font-size: 45px;
+  cursor:pointer;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+
+  @media only screen 
+  and (max-width: 500px) { 
+    .hero-image {
+      height: 150px;
+    }
+    .hero-text {
+      font-size: 1.7rem;
+    }
+}

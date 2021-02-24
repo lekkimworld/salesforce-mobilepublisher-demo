@@ -1,0 +1,30 @@
+{
+  "orgName": "salesforce-mobilepublisher-demo",
+  "edition": "Enterprise",
+  "features": [
+    "Sites",
+    "Communities",
+    "CustomerCommunityPlus",
+    "ForceComPlatform",
+    "CMSUnlimitedUse"
+  ],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "securitySettings": {
+      "passwordPolicies": {
+        "enableSetPasswordInApi": true
+      }
+    },
+    "experienceBundleSettings": {
+      "enableExperienceBundleMetadata": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}
