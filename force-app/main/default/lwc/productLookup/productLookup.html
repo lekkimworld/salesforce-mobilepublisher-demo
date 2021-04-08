@@ -1,37 +1,39 @@
 <template>
-    <div class="slds-grid slds-row large-font">
-        <div class="slds-size_4-of-6">
-            <lightning-input
-                type="number"
-                name="productId"
-                label="Product ID"
-                onkeypress={handleKeypress}
-            ></lightning-input>
-        </div>
-        <div class="slds-size_2-of-6 slds-align-bottom">
+    <div class="slds-grid slds-row container">
+        <lightning-input
+            type="number"
+            name="productId"
+            label="Product ID"
+            variant="label-hidden"
+            onkeypress={handleKeypress}
+        ></lightning-input>
+    </div>
+    <div class="slds-grid slds-row container">
+        <button>
             <lightning-button-icon
-                variant="border-filled"
+                variant="bare"
                 size="large"
                 icon-name="utility:search"
                 onclick={handleSearch}
-                class="slds-m-left--xx-small"
             ></lightning-button-icon>
+        </button>
+        <button>
             <lightning-button-icon
-                variant="border-filled"
+                variant="bare"
                 size="large"
                 icon-name="utility:clear"
                 onclick={handleClear}
-                class="slds-m-left--xx-small"
             ></lightning-button-icon>
-            <template if:true={scannerAvailable}>
+        </button>
+        <template if:true={scannerAvailable}>
+            <button>
                 <lightning-button-icon
-                    variant="border-filled"
+                    variant="bare"
                     size="large"
                     icon-name="utility:photo"
                     onclick={handleBeginScanClick}
-                    class="slds-m-left--xx-small"
                 ></lightning-button-icon>
-            </template>
-        </div>
+            </button>
+        </template>
     </div>
 </template>

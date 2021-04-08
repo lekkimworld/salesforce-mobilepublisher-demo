@@ -1,0 +1,21 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 350px;
+    height: 60px;
+}
+
+lightning-input {
+    font-size: 30px;
+}
+button {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    width: 52px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}

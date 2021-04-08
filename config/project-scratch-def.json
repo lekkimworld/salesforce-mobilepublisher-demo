@@ -6,16 +6,12 @@
     "Communities",
     "CustomerCommunityPlus",
     "ForceComPlatform",
-    "CMSUnlimitedUse"
+    "CMSUnlimitedUse",
+    "EnableSetPasswordInApi"
   ],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
-    },
-    "securitySettings": {
-      "passwordPolicies": {
-        "enableSetPasswordInApi": true
-      }
     },
     "experienceBundleSettings": {
       "enableExperienceBundleMetadata": true
